@@ -1,0 +1,134 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*::before, *::after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,:active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav, footer, header, aside{display: block;}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:400;} */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #e6e5db;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+form{
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+input{
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #1ea80b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #3c17a3;
+}
+
+.result{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+#additional-info{
+    font-size: 20px;
+    text-align: center;
+    color:#421f18;
+    margin-top: 20px;
+}
+
+.coctail{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 5px;
+    display: inline-block;
+    font-size: 18px;
+    transition: all 0.5s ease;
+}
+
+a:hover{
+    background-color: #2a029b;
+    transform: scale(1.17);
+}
+
+a:active{
+    transform: scale(0.9);
+}
+
+.blueLagoon{
+    background-color: #17a2b8;
+}
+
+.blueKit{
+    background-color: #3b2ad3;
+}
+
+#blueKitResult{
+    display: none;
+    margin-top: 20px;
+}

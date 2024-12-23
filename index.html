@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор ИМТ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Калькулятор индекса массы тела(ИМТ)</h1>
+    <form id="bmiForm">
+        <input type="number" id="weight" placeholder="Вес (кг)" required>
+        <input type="number" id="height" placeholder="Рост (см)" required>
+        <button type="submit">Рассчитать ИМТ ёптить</button>
+    </form>
+    <div class="result" id="bmiResult"></div>
+    <br>
+    <div id="additional-info" style="display: none;">
+        <h3>Ты на полном серьезе пришел сюда худеть?</h3>
+        <p class="cocktail">Лучше сделай себе Коктейль!</p>
+        <a class="blueKit" href="blueKit.html">Коктейль Синий кит</a>
+        <br>
+        <a class="blueLagoon" href="/blueLagoon.html">Коктейль Голубая лагуна</a>
+    </div>
+
+    <script src="js/script.js"></script>    
+</body>
+</html>

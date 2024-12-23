@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коктейль Синий кит</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Коктейль Синий кит</h1>
+    </header>
+    <h3>Я не буду тебе рассказывать о том, как его готовить и что в него добавлять,
+        это ты можешь нагуглить и тебе любой сайт с коктейлями выдаст рецепт.
+        Здесь я тебе покажу свою авторскую способ приготовления и, что самое важное, какое количество
+        ингредиентов добавлять, если хочешь сделать коктейля прозапас, а не на один стаканчик.
+    </h3>
+    <h2>Калькулятор ингредиентов</h2>
+    <form id="calcOfBlueKit">
+        <label for="volume">Объем готового коктейля (в литрах)</label>
+        <input type="number" id="volume" step="0.1" min="0.1" value="1" required>
+        <button type="submit">Рассчитать</button>
+    </form>
+
+    <div id="blueKitResult" style="display: none;">
+            <h3>Ингредиенты:</h3>
+        <ul id="ingredientList"></ul>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
