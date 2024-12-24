@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Коктейль Голубая Лагуна</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Коктейль Голубая Лагуна</h1>
+    </header>
+    <p>Хочешь согреть своё ледяное сердце этими холодными вечерами? Тогда тебе сюда. 
+        Тебе ничего не нужно, кроме как сбегать до Красного и Белого за спрайтом или его аналогами. 
+        А всё остальное должно остаться после прошлого коктейля.
+    </p>
+    <h2>Калькулятор ингредиентов</h2>
+    <form id="calcOfBlueLagoon">
+        <label for="volume">Объем готового коктейля (в литрах)</label>
+        <input type="number" id="volume" step="0.1" min="0.1" value="1" required>
+        <button type="submit">Рассчитать</button>
+    </form>
+
+    <div id="blueLagoonResult" style="display: none;">
+            <h3>Ингредиенты:</h3>
+        <ul id="ingredientListOfBlueLagoon"></ul>
+        <p>Не забудь добавить лёд!</p>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

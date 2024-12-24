@@ -1,8 +1,4 @@
-console.log('Скрипт выполняется');
-const form = document.getElementById('bmiForm');
-console.log('Найденная форма', form);
-
-document.getElementById('bmiForm').addEventListener('submit', function (e) {
+document.getElementById('bmiForm')?.addEventListener('submit', function (e) {
     console.log('Обработчик данных submit вызван');
     e.preventDefault();
 
@@ -59,8 +55,8 @@ document.getElementById('calcOfBlueKit')?.addEventListener('submit', function(e)
     const lemonJuiceAmount = (lemonJuice * volume).toFixed(2) + ' л';
     const syrupAmount = (syrup * volume).toFixed(2) + ' л';
 
-    const ingredientList = document.getElementById('ingredientList');
-    ingredientList.innerHTML = `
+    const ingredientListOfBlueKit = document.getElementById('ingredientListOfBlueKit');
+    ingredientListOfBlueKit.innerHTML = `
         <li>Виски: ${whiskeyAmount}</li>
         <li>Cок апельсиновый: ${orangeJuiceAmount}</li>
         <li>Сок ананасовый: ${pineappleJuiceAmount}</li>
@@ -72,3 +68,34 @@ document.getElementById('calcOfBlueKit')?.addEventListener('submit', function(e)
 });
 
 
+document.getElementById('calcOfBlueLagoon')?.addEventListener('submit', function(e){
+    e.preventDefault();
+
+
+    const volume = parseFloat(document.getElementById('volume').value);
+
+    if(!volume || volume <= 0) {
+        alert('Введите корректный объем коктейля');
+        return;
+    }
+
+    const whiskey = 0.22;
+    const sprite = 0.620;
+    const lemonJuice = 0.06;
+    const syrup = 0.1;
+
+    const whiskeyAmount = (whiskey * volume).toFixed(2) + ' л';
+    const spriteAmount = (sprite * volume).toFixed(2) + ' л';
+    const lemonJuiceAmount = (lemonJuice * volume).toFixed(2) + ' л';
+    const syrupAmount = (syrup * volume).toFixed(2) + ' л';
+
+    const ingredientListOfBlueLagoon = document.getElementById('ingredientListOfBlueLagoon');
+    ingredientListOfBlueLagoon.innerHTML = `
+        <li>Виски: ${whiskeyAmount}</li>
+        <li>Сок лимонный: ${lemonJuiceAmount}</li>
+        <li>Сироп: ${syrupAmount}</li>
+        <li>Спрайт: ${spriteAmount}</li>
+    `;
+        
+    document.getElementById('blueLagoonResult').style.display = 'block';
+});
